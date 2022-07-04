@@ -2,6 +2,8 @@ package com.generation.blogpessoal.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -43,12 +45,12 @@ public class TemaController {
 	}
 	
 	@PostMapping
-	public ResponseEntity<Tema> inserirTema(@RequestBody Tema tema){
+	public ResponseEntity<Tema> inserirTema(@Valid @RequestBody Tema tema){
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(tema));
 	}
 	
 	@PutMapping
-	public ResponseEntity<Tema> atualizarTema (@RequestBody Tema tema){
+	public ResponseEntity<Tema> atualizarTema (@Valid @RequestBody Tema tema){
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(tema));
 	}
 	

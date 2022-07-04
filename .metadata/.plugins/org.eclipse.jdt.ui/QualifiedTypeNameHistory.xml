@@ -29,4 +29,5 @@
     <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.generation.blogpessoal.model.Tema"/>
+    <fullyQualifiedTypeName name="javax.validation.Valid"/>
 </qualifiedTypeNameHistroy>
