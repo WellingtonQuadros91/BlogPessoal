@@ -29,6 +29,20 @@ public class Usuario {
 	private String senha;
 	
 	private String foto;
+	
+	// Primeiro método Construtor
+	
+	public Usuario(Long id, String nome, String usuario, String senha, String foto) {
+		this.id= id;
+		this.nome = nome;
+		this.usuario = usuario;
+		this.senha = senha;
+		this.foto = foto;
+	}
+	
+	// Segundo método Construtor
+	
+	public Usuario() {      }
 
 	public String getFoto() {
 		return foto;
